@@ -1,0 +1,148 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f6f8;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+  }
+  
+  .features {
+    max-width: 1100px;
+    text-align: center;
+  }
+  
+  .text h2 {
+    font-weight: 300;
+    color: #7d889e;
+  }
+  
+  .text h1 {
+    font-weight: 700;
+    color: #2c3a5b;
+    margin: 0.5rem 0 ;
+  }
+  
+  .text p {
+    color: #7d889e;
+    max-width: 600px;
+    margin: 1rem auto 2rem;
+  }
+  
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 290px;
+  }
+  
+  .bottom-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .card img {
+    align-self: flex-end;
+    width: 40px;
+    height: 40px;
+    margin-top: 1rem;
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-weight: 700;
+    color: #2c3a5b;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #7d889e;
+  }
+  
+  .card.red { border-top: 4px solid hsl(0, 78%, 62%); }
+  .card.teal { border-top: 4px solid hsl(180, 62%, 55%); }
+  .card.blue { border-top: 4px solid hsl(212, 86%, 64%); }
+  .card.yellow { border-top: 4px solid hsl(34, 97%, 64%); }
+
+  .card.yellow{
+    transform: translateY(-100px);
+  }
+
+  .card.blue{
+    transform: translateX(160px);
+    margin-left: 30px;
+  }
+
+  .card.teal{
+    transform: translateX(-160px);
+    margin-right: 30px;
+
+  }
+
+  .card.red{
+    transform: translateY(100px);
+  }
+
+  @media (max-width: 1024px) {
+    .card.blue{
+        margin-left: initial;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      max-width: 100%;
+    }
+  
+    .bottom-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card.top {
+        margin-top: 0;
+      }
+    
+      .card.yellow {
+        transform: none;
+        max-width: 100%;
+      }
+
+      .card.red{
+        transform: none;
+                max-width: 100%;
+
+      }
+
+      .card.blue{
+        transform: none;
+        margin: initial;
+      }
+
+      .card.teal{
+        transform: none;
+        margin: initial;
+      }
+
+      
+
+
+    }
+  
+  
